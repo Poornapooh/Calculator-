@@ -1,6 +1,7 @@
 **🧮 Simple Calculator using HTML & JavaScript**
 
 **📘 Project Overview:**
+
 This project is a Simple Web-Based Calculator designed to perform basic arithmetic 
 operations such as Addition, Subtraction, Multiplication, and Division.
 It is created using HTML for the structure and JavaScript for the logic and 
