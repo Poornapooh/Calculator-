@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <h1 align="center">SIMPLE CALCULATOR TO PERFORM BASIC OPERATIONS</h1>
+  <hr>
+</head>
+<body>
+  <form>
+    ENTER NUMBER FOR N1: <input type="text" id="N1"><br><br>
+    ENTER NUMBER FOR N2: <input type="text" id="N2"><br><br>
+    RESULT: <input type="text" id="RES" readonly><br><br>
+
+    <input type="button" value="ADDITION" onclick="add()">
+    <input type="button" value="SUBTRACTION" onclick="sub()">
+    <input type="button" value="MULTIPLICATION" onclick="mul()">
+    <input type="button" value="DIVISION" onclick="div()">
+  </form>
+
+  <script>
+    function add() {
+      var n1 = parseFloat(document.getElementById('N1').value);
+      var n2 = parseFloat(document.getElementById('N2').value);
+      document.getElementById('RES').value = n1 + n2;
+    }
+
+    function sub() {
+      var n1 = parseFloat(document.getElementById('N1').value);
+      var n2 = parseFloat(document.getElementById('N2').value);
+      document.getElementById('RES').value = n1 - n2;
+    }
+
+    function mul() {
+      var n1 = parseFloat(document.getElementById('N1').value);
+      var n2 = parseFloat(document.getElementById('N2').value);
+      document.getElementById('RES').value = n1 * n2;
+    }
+
+    function div() {
+      var n1 = parseFloat(document.getElementById('N1').value);
+      var n2 = parseFloat(document.getElementById('N2').value);
+      if (n2 !== 0) {
+        document.getElementById('RES').value = n1 / n2;
+      } else {
+        document.getElementById('RES').value = 'Cannot divide by zero';
+      }
+    }
+  </script>
+</body>
+</html>
